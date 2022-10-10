@@ -2,9 +2,6 @@
 <html lang="en">
 
 <head>
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,46 +13,167 @@
   <title>Alina Website</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
   <!-- Custom Fonts -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-    type="text/css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    let result = prompt("password");
+    if (result === "alina") {
+
+    }
+    else {
+      location.replace("http://google.com");
+    }
+  </script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <style>
+      /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+      .row.content {
+        height: 1500px
+      }
+
+      /* Set gray background color and 100% height */
+      .sidenav {
+        background-color: #f1f1f1;
+        height: 100%;
+      }
+
+      /* Set black background color, white text and some padding */
+      footer {
+        background-color: #555;
+        color: white;
+        padding: 15px;
+      }
+
+      /* On small screens, set height to 'auto' for sidenav and grid */
+      @media screen and (max-width: 767px) {
+        .sidenav {
+          height: auto;
+          padding: 15px;
+        }
+
+        .row.content {
+          height: auto;
+        }
+      }
+    </style>
 </head>
 
-<body id="page-top" class="index">
-  <h1>November</h1>
-  <p>Slightly over3 years ago, my young daughter Alina died, aged 22 months after 5 months in ICU at Sydney Children's Hospital. She had a long persistent 'chronic' virus, with 40x visits to her GP of all the same progressive symptoms, starting with conjunctivitis at 2 weeks old, HFMD, rashes, vomiting, and migrating to her throat and lungs where it
-  developed into frequent tonsillitis, wheeze, cough, croup and stridor. Then seizures, EPC seizures until finally her death (accumulated infections to include Pneumonia). All documented on her GP records, made by 15 different GP's and Hospital staff that all independently agreed she “just
-  had a mild virus” and “it would pass within a week”. it never did, it always returned. Every symptom was very easily recognized and unmistakable viral symptoms, even testing positive to an Entero/Rhinovirus swab.</p>
+<body>
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>Alina's Story</h4>
+      <ul class="nav flex-column nav-pills nav-stacked">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#section1">November</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">December</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">January</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section4">February</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section5">March</a>
+        </li>
+      </ul>
+      <br>
+      <!-- <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Blog..">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div> -->
+    </div>
 
-  <p>It appeared to be a similar sequalae to the media reporting of Charlie Gard and Alfie Evans in the UK</p>
+    <div class="col-sm-9">
+      <h4><small>Start here</small></h4>
+      <hr>
+      <h2>November</h2>
+      <p>Slightly over3 years ago, my young daughter Alina died, aged 22 months after 5 months in ICU at Sydney Children's
+        Hospital. She had a long persistent 'chronic' virus, with 40x visits to her GP of all the same progressive symptoms,
+        starting with conjunctivitis at 2 weeks old, HFMD, rashes, vomiting, and migrating to her throat and lungs where it
+        developed into frequent tonsillitis, wheeze, cough, croup and stridor. Then seizures, EPC seizures until finally her
+        death (accumulated infections to include Pneumonia). All documented on her GP records, made by 15 different GP's and
+        Hospital staff that all independently agreed she “just
+        had a mild virus” and “it would pass within a week”. it never did, it always returned. Every symptom was very easily
+        recognized and unmistakable viral symptoms, even testing positive to an Entero/Rhinovirus swab.</p>
 
-  <p>The number of times we had to deal with croup was far more than mentioned than the GP's medical records, but we had learnt to spot the signs in advance (namely a change or smell on her breath in the late evening) so often gave her Redipred (steroids) prior to bed in preparation of the night ahead. One GP got so impatient of our frequent visits she
-  just signed over a script for x5 repeats. No GP seemed willing to escalate the issue, despite requests</p>
+      <p>It appeared to be a similar sequalae to the media reporting of Charlie Gard and Alfie Evans in the UK</p>
 
-  <p>We were given steroids on most occasions and even told “she has back to back viruses - from daycare”, and this seem to control the issue to some extent, except at night when she would cough for a few hours and had a low grade temperature (sweaty head)</p>
+      <p>The number of times we had to deal with croup was far more than mentioned than the GP's medical records, but we had
+        learnt to spot the signs in advance (namely a change or smell on her breath in the late evening) so often gave her
+        Redipred (steroids) prior to bed in preparation of the night ahead. One GP got so impatient of our frequent visits she
+        just signed over a script for x5 repeats. No GP seemed willing to escalate the issue, despite requests</p>
 
-  <p>In recognizing childhood viruses, I believe an inner-city GP would have seen more than anyone, and it doesn't take more than general parental knowledge to know these symptoms anyway</p>
+      <p>We were given steroids on most occasions and even told “she has back to back viruses - from daycare”, and this seem
+        to control the issue to some extent, except at night when she would cough for a few hours and had a low grade
+        temperature (sweaty head)</p>
 
-  <p>From 6 months old we were visiting the GP's once every week, if not twice a week. they just noted the symptoms. Dr Sharma a GP advised the father of the “red flags” of concern for enteroviruses. (Fever, rash, lethargy, cough, stridor)</p>
+      <p>In recognizing childhood viruses, I believe an inner-city GP would have seen more than anyone, and it doesn't take
+        more than general parental knowledge to know these symptoms anyway</p>
 
-  <p>It was a peculiar illness, as by morning all symptoms would all but disappear, within hours of onset. On many occasions the GP would send us home as there were no visible symptoms, despite us seeing them only earlier in the day. The illness had a baseline of symptoms which was progressive and would advance and retreat just as quickly.
-  We noticed that her eye was developing Amblyopia on her left side and she was frequently wheezy, and this was associated with a cough. These symptoms seemed to happen simultaneously. She would have brief episodes of full body rashes, low grade temperatures, vomiting blood, red eye, sore throat, croup, stridor and this distinct smell on her breath. Another
-  strange observations was If she heard a deep noise from the passing cars, regardless of how asleep she was, she would make abrupt and brief jerking movements, then fall back asleep. We knew it was unusual, but not to its significance</p>
+      <p>From 6 months old we were visiting the GP's once every week, if not twice a week. they just noted the symptoms. Dr
+        Sharma a GP advised the father of the “red flags” of concern for enteroviruses. (Fever, rash, lethargy, cough,
+        stridor)</p>
+
+      <p>It was a peculiar illness, as by morning all symptoms would all but disappear, within hours of onset. On many
+        occasions the GP would send us home as there were no visible symptoms, despite us seeing them only earlier in the day.
+        The illness had a baseline of symptoms which was progressive and would advance and retreat just as quickly.
+        We noticed that her eye was developing Amblyopia on her left side and she was frequently wheezy, and this was
+        associated with a cough. These symptoms seemed to happen simultaneously. She would have brief episodes of full body
+        rashes, low grade temperatures, vomiting blood, red eye, sore throat, croup, stridor and this distinct smell on her
+        breath. Another
+        strange observations was If she heard a deep noise from the passing cars, regardless of how asleep she was, she would
+        make abrupt and brief jerking movements, then fall back asleep. We knew it was unusual, but not to its significance
+      </p>
 
 
-  <p>Alina was otherwise a very bright girl, very sociable and with an excellent sense of humour, she enjoyed teasing her classmates with her superb comical timing, as well as dancing, with her favourite being the PotBelleez “Shout” or Bhangra. As a child she he was thriving. She understood both Hindi from her mother, and carerer as well as English from
-  her father Patrick. There was no question of any mental impairment or physical abnormalities.</p>
+      <p>Alina was otherwise a very bright girl, very sociable and with an excellent sense of humour, she enjoyed teasing her
+        classmates with her superb comical timing, as well as dancing, with her favourite being the PotBelleez “Shout” or
+        Bhangra. As a child she he was thriving. She understood both Hindi from her mother, and carerer as well as English
+        from
+        her father Patrick. There was no question of any mental impairment or physical abnormalities.</p>
+      <br><br>
+
+      <h4><small>Continue...</small></h4>
+      <hr>
+      <h2>November detail</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
+      <h5><span class="label label-success">Lorem</span></h5><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <hr>
+
+
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid">
+  <p>Footer Text</p>
+</footer>
 
 </body>
+
 </html>
