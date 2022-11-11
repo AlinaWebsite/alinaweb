@@ -41,13 +41,15 @@
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
     .row.content {
-      height: 1500px
+      height: 100%
     }
 
     /* Set gray background color and 100% height */
     .sidenav {
       background-color: #f1f1f1;
-      height: 100%;
+      /* height: 100%; */
+      min-height: -moz-min-content;
+      min-height:min-content
     }
 
     /* Set black background color, white text and some padding */
@@ -55,6 +57,35 @@
       background-color: #555;
       color: white;
       padding: 15px;
+    }
+
+    figcaption {
+      font-style: italic;
+    }
+
+    .img-left {
+      display: inline;
+      padding-right: 10px;
+      float: left;
+    }
+
+    .img-right {
+      display: block;
+      padding-left: 10px;
+      float: right;
+    }
+
+    .medical-notes {
+      font-style: italic;
+    }
+
+    .communication{
+      margin-bottom: 10px;
+      margin-top: 10px;
+      padding: 15px;
+    }
+    .communication p {
+      font-family: Arial, Helvetica, sans-serif !important;
     }
 
     /* On small screens, set height to 'auto' for sidenav and grid */
@@ -102,9 +133,19 @@
         <hr>
         <h2>November</h2>
 
-        <p>There was only a very mild concerns that she didn't start walking until 17 months, but this was the same age as her father, her mother did not walk until 22 months. She otherwise hit every milestone but she was often carried as she was a very entertaining child to her parents and anyone who would pick her up, all you can guess absolutely adored her.</p>
+        <p>
+          <figure class="figure img-right">
+            <img src="img/4months.jpg" alt="Alina aged 4 months" height="200px" />
+            <figcaption>Alina aged 4 months</figcaption>
+          </figure>
+          There was only a very mild concerns that she didn't start walking until 17 months, but this was the same age as her father, her mother did not walk until 22 months. She otherwise hit every milestone but she was often carried as she was a very entertaining child to her parents and anyone who would pick her up, all you can guess absolutely adored her.
+        </p>
 
         <p>Ali's first word was around 12 months, it caught both parents by total surprise. She pointed to her water bottle and said "paanee" (Hindi for water). She didn't repeat this.</p>
+        <figure class="figure img-left">
+        <img src="img/diwali-5-months.jpg" alt="Diwali, Alina aged 5 months" height="200px" />
+        <figcaption>Diwali, aged 5 months</figcaption>
+        </figure>
 
         <p>She in particular enjoyed visiting Woolworths as she recognised many of the staff who would cuddle her while her parents shop. Its where she learnt to walk.</p>
 
@@ -120,19 +161,28 @@
 
         <p>The family was invited to a party the following weekend, and Alina's friends and their parents noticed how quiet she was, as typically she would mingle and play, especially enjoying and reacting to adult attention. However, being a party and a variety of foods on offer, she finally ate some solids food that week; a piece of cake</p>
 
-        <h3>11 Nov 2017</h3>
+
+        <figure class="figure">
+          <img src="img/11-nov.jpg" alt="family on 11th November" width="150px" />
+          <figcaption>11 Nov 2017</figcaption>
+        </figure>
 
         <p>That evening, shortly after her formula bottle feed, Alina started drooling heavily, so much that mum had to change her top, she then had a seizure in her throat, which spread to her lip on her left side (the same side she had a dancing eye). She was rushed to the local GP's where the Doctor believed it may be a seizure and called the paramedics. The paramedics believed it was something trapped in her throat, as she was fully conscious, since it looked more like an irritation.</p>
 
-        <h4>History of presenting Illness:</h4>
-        <ul>
-          <li>Preceeding week- off her food more quiet than normal</li>
-          <li>nil fevers/cough/cold symptoms</li>
-        </ul>
+        <div class="medical-notes">
+          <h4>History of presenting Illness:</h4>
+          <ul>
+            <li>Preceeding week- off her food more quiet than normal</li>
+            <li>nil fevers/cough/cold symptoms</li>
+          </ul>
 
-        <p>On Saturday morning, the family attended a baby shower and she missed her nap. She was quiet for the rest of the day. Mum describes that she had just started to go to sleep, then awoke suddenly, and started salivating significantly from the left side of her mouth, with foamy saliva. The left side of her mouth began twitching, and she began to clench her teeth.</p>
+          <p>On Saturday morning, the family attended a baby shower and she missed her nap. She was quiet for the rest of the day. Mum describes that she had just started to go to sleep, then awoke suddenly, and started salivating significantly from the left side of her mouth, with foamy saliva. The left side of her mouth began twitching, and she began to clench her teeth.</p>
 
-        <p>They [the GP] called the ambulance, and the twitching commenced to the left arm and leg. It was described as rhythmical jerking, becoming gradually stronger. Her head and eyes were turned to the left, and she was not blinking or responding. After benzodiazepine administration IV at Cantebury, the event ceased (lasted 45 minutes).She was lethargic following the event, for around 45 minutes. She was discharged the following morning</p>
+          <p>They [the GP] called the ambulance, and the twitching commenced to the left arm and leg. It was described as rhythmical jerking, becoming gradually stronger. Her head and eyes were turned to the left, and she was not blinking or responding. After benzodiazepine administration IV at Cantebury, the event ceased (lasted 45 minutes).She was lethargic following the event, for around 45 minutes. She was discharged the following morning</p>
+
+          <img src="img/surgery-consulatation-nov.jpg" alt="Surgery consultation notes" width="50%" />
+          <img src="img/surgery-consulatation-2-nov.jpg" alt="More notes" width="50%" />
+        </div>
 
         <p>She was taken to Canterbury general hospital, where it was noticed she also had croup and was given steroids. The seizure continued in her lip and throat. Midozolam and adrenaline stopped the prolonged seizure immediately.</p>
 
@@ -141,49 +191,60 @@
         <p>It is worth noting the ++drooling and seizures in the throat and mouth, recovery with midazolam as being the predominant
         features of this initial “seizure” episode. Ali had HFMD aged 11 months.</p>
 
-        <p>Herpangina is a viral infection of the mouth which is in most cases caused by a particular strain of group A coxsackievirus, but also by group B coxsackievirus, echovirus and enterovirus 71. A common disease related to herpangina is hand, foot and mouth disease (HFMD)</p>
-        <ul>
-        <li>Sore throat</li>
-        <li>Pain when swallowing</li>
-        <li>Headache</li>
-        <li>Sudden fever</li>
-        <li>Neck pain</li>
-        <li>Swollen lymph glands</li>
-        <li>Loss of appetite</li>
-        <li>Drooling and/or vomiting</li>
-        </ul>
-        <p>It is common for parents to contract herpangina from children who are sick, but fortunately the disease is no more severe in adults than it is in children. However, because unborn children can be affected, it can be a matter for concern if a pregnant woman contracts herpangina</p>
+        <div class="card">
+          <div class="card-body">
+            <p>Herpangina is a viral infection of the mouth which is in most cases caused by a particular strain of group A
+              coxsackievirus, but also by group B coxsackievirus, echovirus and enterovirus 71. A common disease related to
+              herpangina is hand, foot and mouth disease (HFMD)</p>
+            <ul>
+              <li>Sore throat</li>
+              <li>Pain when swallowing</li>
+              <li>Headache</li>
+              <li>Sudden fever</li>
+              <li>Neck pain</li>
+              <li>Swollen lymph glands</li>
+              <li>Loss of appetite</li>
+              <li>Drooling and/or vomiting</li>
+            </ul>
+            <p>It is common for parents to contract herpangina from children who are sick, but fortunately the disease is no more
+              severe in adults than it is in children. However, because unborn children can be affected, it can be a matter for
+              concern if a pregnant woman contracts herpangina</p>
 
-        <p>In hand, foot and mouth disease, the rash may affect</p>
-        <ul>
-        <li>The mouth, including the tongue, roof of the mouth, tonsils, uvula and the back of the throat</li>
-        <li>The hands and feet</li>
-        <li>The knees and elbows</li>
-        <li>The buttocks and genitals</li>
-          </ul>
+            <p>In hand, foot and mouth disease, the rash may affect</p>
+            <ul>
+              <li>The mouth, including the tongue, roof of the mouth, tonsils, uvula and the back of the throat</li>
+              <li>The hands and feet</li>
+              <li>The knees and elbows</li>
+              <li>The buttocks and genitals</li>
+            </ul>
 
-        https://ada.com/conditions/herpangina/
+            <a href="https://ada.com/conditions/herpangina/">https://ada.com/conditions/herpangina/</a>
+            <br /><br />
 
-        <p>However, there are on occasions complications<br>
-        Herpangina itself is generally a mild condition, but some causative microorganisms, such as enterovirus 71, may result in severe complications, including the following:</p>
-        <ul>
-        <li>Brain stem encephalitis</li>
-        <li>Acute flaccid paralysis</li>
-        <li>Aseptic meningitis</li>
-        <li>Myocarditis</li>
-        <li>Some sources recommend using intravenous midazolam (0.1-0.3 mg/kg/dose) </li>
-          </ul>
+            <p>However, there are on occasions complications<br>
+              Herpangina itself is generally a mild condition, but some causative microorganisms, such as enterovirus 71, may result
+              in severe complications, including the following:</p>
+            <ul>
+              <li>Brain stem encephalitis</li>
+              <li>Acute flaccid paralysis</li>
+              <li>Aseptic meningitis</li>
+              <li>Myocarditis</li>
+              <li>Some sources recommend using intravenous midazolam (0.1-0.3 mg/kg/dose) </li>
+            </ul>
 
-        https://www.ncbi.nlm.nih.gov/books/NBK507792/
+            <a href="https://www.ncbi.nlm.nih.gov/books/NBK507792/">https://www.ncbi.nlm.nih.gov/books/NBK507792/</a>
 
 
-        <p>Acute laryngeal croup is most often associated with PIV, RSV, rhinovirus, and enterovirus. Rhinovirus and enterovirus appeared equally often in croup and in wheezing illness</p>
+            <p>Acute laryngeal croup is most often associated with PIV, RSV, rhinovirus, and enterovirus. Rhinovirus and enterovirus
+              appeared equally often in croup and in wheezing illness</p>
 
-        https://pubmed.ncbi.nlm.nih.gov/18410770/
-
+            <a href="https://pubmed.ncbi.nlm.nih.gov/18410770/">https://pubmed.ncbi.nlm.nih.gov/18410770/</a>
+          </div>
+        </div>
 
         <p>Over the next few days both parents were very cautious, in disbelief that their daughter had a seizure, since there was no history for either side of the family, (other than a maternal uncle who electrocuted himself in his teens). Alina became very lethargic and irritable. Within 3 days (on the Monday) she had another seizure and croup occurred again. Again, she was taken to Canterbury Hospital, then Royal Prince Albert, then on to Sydney Children's hospital where Dr Hugo Sampaio was assigned as her Neurologist Paediatric Specialist. Her brain MRI was shown to be clear.</p>
 
+        <img src="img/brain-mri.png" alt="notes from brain mri" width="100%" />
         <p> The full and detailed history of Alinas illnesses was given, although without focus on any single aspect as the parents did not know the relevance but they were very thorough; repeated virus, HFMD, vomiting of blood, predominant & frequent night cough and head sweats, rashes, wheeze that occurred simultaneously with eye deviation. Post vaccine illness. Being very clear that this was a repeating & chronic virus, confirmed from a large number of visits to the GP's</p>
 
         <p>Dr. Sampaio prescribed Keppra and gave his contact information, with a follow up appointment 3 months later. Many questions were asked by the neurology department; unusual birthmarks, contact with anyone returning from overseas, does she play in the park or been to the zoo even? The parents gave every answer fully.</p>
@@ -192,6 +253,7 @@
 
         <p>Dr Hugo Sampaio made the following discharge notes:</p>
 
+        <div class="medical-notes">
         <p>nil fevers/cough/cold symptoms<br />
         Development: Rolling: 9m Sitting independently 10m Crawl: 13m Noted Stand: 14m Walking with assist: 17m<br />
         <br />
@@ -200,7 +262,7 @@
         No previous focal seizures</p>
 
         <p>History revisited<br />
-        Sat night- worsening drooling from left side of mouth ++, twitching of left side of mouth<br />
+        Sat night- worsening <strong>drooling from left side of mouth ++</strong>, twitching of left side of mouth<br />
         Clenched teeth<br />
         left head deviation<br />
         CDA- left twitching of left arm and leg - rhythmic, as time progresses, clonus gets fasted<br />
@@ -208,7 +270,7 @@
         twitching stopped straight after midazolam, sleepy for 45 minutes afterwards<br />
         Presented to Canterbury<br />
         total episode- 55 minutes<br />
-        croupy cough with stridor following- given dex<br />
+        <strong>croupy cough with stridor following- given dex</strong><br />
         - discharged 11am Sunday, well during Sunday but hyperactive<br />
         - sent to daycare on Monday - she was well</p>
 
@@ -257,6 +319,7 @@
         - Suggest general paediatric review - suggest Dr Joanne Leal in Stanmore</p>
 
         <p>Dad concerned seizures may have coincided with timing of formula change for Alina. Nursing staff have advised Patrick to speak to neurology in regards to this. The parents have changed the formula Alina is on from S26 to Karicare</p>
+        </div>
 
         <p>For the next month, Alina again had a persistence smell on her breath, strong left eye deviation, sweaty head and wheeze. The night coughing became worse. By coincidence, her normal formula (incorrectly documented but moving from Karicare, and given prior to bed time) was unavailable due to daigou, so another brand was used (one with a noted glucose content). She was otherwise mostly eating the same as the parents. The parents were suspicious that the formula seemed to be associated with increased wheezing & coughing</p>
 
@@ -264,67 +327,83 @@
 
         <p>The parents contacted Dr Sampaio twice in this period. The first email was as follows;</p>
 
-        <p>….Often we were asked if she [Alina] had any birthmarks, and up until Sunday we didn't think she had. On inspection we found this on her back, left mid trunk, about the size and shape of a Dairy-Lea/ Laughing Cow processed cheese triangle. Very feint and white in colour<br />
-        After asking mum -- Indian descent, she too has a large dark birthmark on her neck, that in fact until asked I just thought was a collar tan line on the back of her neck. She says its sensitive to bright sunlight and often covers it when outside</p>
+        <div class="communication">
+          <p>….Often we were asked if she [Alina] had any birthmarks, and up until Sunday we didn't think she had. On inspection we found this on her back, left mid trunk, about the size and shape of a Dairy-Lea/ Laughing Cow processed cheese triangle. Very feint and white in colour<br />
+          After asking mum -- Indian descent, she too has a large dark birthmark on her neck, that in fact until asked I just thought was a collar tan line on the back of her neck. She says its sensitive to bright sunlight and often covers it when outside</p>
 
-        <p>Secondly, Alina is not eating solids in any form, she's excited to see food, plays with it and puts on spoon, into mouth, but seems unable to swallow and so spits it out. This started about 3-6 days before her first seizure on the 11th Nov. Lastly she has terrible bad breath</p>
+          <p>Secondly, Alina is not eating solids in any form, she's excited to see food, plays with it and puts on spoon, into mouth, but seems unable to swallow and so spits it out. This started about 3-6 days before her first seizure on the 11th Nov. Lastly she has terrible bad breath</p>
+
+          <img src="img/birthmark1.jpg" alt="image showing alina's birthmark" width="40%"/>
+          <img src="img/birthmark2.jpg" alt="another image showing alina's birthmark" width="40%" />
+          <img src="img/birthmark3.jpg" alt="a 3rd image showing alina's birthmark" width="40%" />
+        </div>
 
         <p>It is worth noting, the first seizure occurred 6 days following Alina's 18 month MMR, from that day a marked change in her personality, she became very irritable, tired, and unwilling to eat solids</p>
         <p>3 weeks later, after a very difficult night the following symptoms appeared. Unsure to the reason, but it was in the run of play of the previous symptoms the parents had become increasingly used to, the symptoms that would strangely erupt & disappear within a couple of hours. But concerned enough, the parent contacted Dr Sampaio again via the email given with the accompanying images.</p>
 
-        <p>Hi<br />
-        Further to the observations, to add, Alina has developed small spots (hives?) around mouth & chin, a few on chest, backs
-        of knees. Images attached.
-        She is slightly wheezy also and when asleep she twitches quite frequently, like small body hiccups. Much more tired than
-        before the seizures
-        We saw our GP on Saturday, she observed that Alina has sore/bleeding spots on tonsils. She said she will be in contact
-        regarding a discharge report:
-        Dr.Zenifa Peesa, Victoria Tower Medical, Burwood. 8322 9099
-        We have reverted back to pureed food/soup which she can swallow.
-        Thank you again for your correspondence and your concern
-        best regards
-        Patrick
-        </p>
+        <img src="img/dazed-1.jpg" alt="Alina looking dazed" />
+        <img src="img/dazed-2.jpg" alt="Alina looking dazed" />
+
+        <div class="communication">
+          <p>Hi<br />
+          Further to the observations, to add, Alina has developed small spots (hives?) around mouth & chin, a few on chest, backs
+          of knees. Images attached.
+          She is slightly wheezy also and when asleep she twitches quite frequently, like small body hiccups. Much more tired than
+          before the seizures
+          We saw our GP on Saturday, she observed that Alina has sore/bleeding spots on tonsils. She said she will be in contact
+          regarding a discharge report:
+          Dr.Zenifa Peesa, Victoria Tower Medical, Burwood. 8322 9099
+          We have reverted back to pureed food/soup which she can swallow.
+          Thank you again for your correspondence and your concern
+          best regards
+          Patrick
+          </p>
+        </div>
 
         <p>These are the very unique symptoms or red flags for an enterovirus, specifically EV71. Except it was with accompanied low temperature (sweaty head), not elevated</p>
 
-        <ul>
-        <li>Children under 5 years of age, particularly those under 2 years, are most likely to develop severe disease. Hand, foot and mouth disease (HFMD), or a history of contact with a case of HFMD, are occasional but not consistent findings in these children</li>
-        <li>Myoclonic jerks, particularly in sleep</li>
-        <li>Urinary retention</li>
-        <li>Ataxia, weakness, or any focal neurological signs</li>
-        <li>Hypertension and/or bradycardia</li>
-        <li>Severe, unexplained or persistent tachycardia or poor perfusion </li>
-        <li>Altered level of consciousness or excessive irritability</li>
-        <li>Tachypnoea or any other signs of respiratory distress</li>
-        <li>Pulmonary oedema on chest X-ray</li>
-        </ul>
-        https://www.health.nsw.gov.au/Infectious/factsheets/Pages/enterovirus-clinicians.aspx
+        <div class="card">
+          <div class="card-body">
+          <ul>
+            <li>Children under 5 years of age, particularly those under 2 years, are most likely to develop severe disease. Hand, foot and mouth disease (HFMD), or a history of contact with a case of HFMD, are occasional but not consistent findings in these children</li>
+            <li><strong>Myoclonic jerks, particularly in sleep</strong></li>
+            <li>Urinary retention</li>
+            <li><strong>Ataxia, weakness</strong>, or any <strong>focal neurological signs</strong></li>
+            <li>Hypertension and/or bradycardia</li>
+            <li>Severe, unexplained or persistent tachycardia or poor perfusion </li>
+            <li><strong>Altered level of consciousness or excessive irritability</strong></li>
+            <li>Tachypnoea or any other signs of respiratory distress</li>
+            <li>Pulmonary oedema on chest X-ray</li>
+          </ul>
+          <a href="https://www.health.nsw.gov.au/Infectious/factsheets/Pages/enterovirus-clinicians.aspx">https://www.health.nsw.gov.au/Infectious/factsheets/Pages/enterovirus-clinicians.aspx</a>
 
-        <ul>
-        <li>Myoclonic jerks are seen more often in EV71 than in other enteroviruses, and could be an early indicator of neurological involvement, particularly in the brainstem</li>
-        <li>In addition, myoclonic jerks seen in many otherwise healthy young children, particularly when they are asleep, can occur spontaneously or be provoked by loud noises</li>
-        <li>Grade I, myoclonic jerks, tremor or ataxia, or both; grade II, cranial nerve palsies evident from eye-movement disorders (nystagmus, strabismus, or gaze paresis), facial weakness, and bulbar palsy (dysphagia, dysarthria and dysphonia); and grade III, acute onset of intractable, frequently fatal, cardiorespiratory failure</li>
-        <li>The viral load is frequently very low, as for poliomyelitis; for example, virus is detected in 0-5% of CSF samples from patients with neurological disease</ul>
-        </ul>
-        http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.834.5169&rep=rep1&type=pdf
+          <ul>
+            <li><strong>Myoclonic jerks are seen more often in EV71 than in other enteroviruses, and could be an early indicator of neurological involvement, particularly in the brainstem</strong></li>
+            <li>In addition, myoclonic jerks seen in many otherwise healthy young children, particularly when they are asleep, can occur spontaneously or be <strong>provoked by loud noises</strong></li>
+            <li>Grade I, myoclonic jerks, tremor or ataxia, or both; grade II, cranial nerve palsies evident from eye-movement disorders (nystagmus, strabismus, or gaze paresis), facial weakness, and bulbar palsy (dysphagia, dysarthria and dysphonia); and grade III, acute onset of intractable, frequently fatal, cardiorespiratory failure</li>
+            <li>The <strong>viral load is frequently very low</strong>, as for poliomyelitis; for example, virus is detected in 0-5% of CSF samples from patients with neurological disease</ul>
+          </ul>
+          <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.834.5169&rep=rep1&type=pdf">http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.834.5169&rep=rep1&type=pdf</a>
 
-        <p>Do note the effect of loud noises. A feature described frequently to the Neurology Doctors, regardless of how asleep she was, Alina would display “sudden jerks” when she heard certain noises, in particular car or motorbike engines (and plastic bags). It was even noticed by her care worker 5 days before her first seizure. The parents had noticed them from birth.</p>
+          <p>Do note the <strong>effect of loud noises</strong>. A feature described frequently to the Neurology Doctors, regardless of how asleep she was, Alina would display “sudden jerks” when she heard certain noises, in particular car or motorbike engines (and plastic bags). It was even noticed by her care worker 5 days before her first seizure. The parents had noticed them from birth.</p>
+          <img src="img/chat-1.jpg" alt="a chat conversation" />
+        </div>
 
         <p>With the given image of the deviated eye, you could even summarise this was “stage 1 & 2” EV71</p>
 
-        <p>It was also in line with development and summary of all the individual components of 40 visits to the GP's of Alinas medical history i.e. it is a chronic progressive variation of EV71, and had been developing since a week after birth. This was a very clear clinical presentation in every manner except confirmation by testing (performed on RT-PCR)</p>
+        <p>It was also in line with development and <u>summary of all the individual components of 40 visits</u> to the GP's of Alinas medical history i.e. it is a <strong>chronic progressive variation of EV71</strong>, and had been developing since a week after birth. This was a very clear clinical presentation in every manner except confirmation by testing (performed on RT-PCR)</p>
 
-        <p>Alina had a seizure 2 days later and was taken to SCH, now with a Focal EPC seizures (continuous) and the MRI showed brainstem inflammation</p>
+        <p>Alina had a seizure 2 days later and was taken to SCH, now with a <strong>Focal EPC seizures</strong> (continuous) and the MRI showed brainstem inflammation</p>
 
-        <p>Discussed with Prof Edwin Kirk. At this stage Alina's presentation would not appear to be metabolic in nature … However, Dr Sampaio's question of whether this could be POLG or mitochondrial cannot be completely excluded at this time</p>
+        <div class="medical-notes">
+        <p>Discussed with Prof Edwin Kirk. At this stage Alina's presentation would not appear to be metabolic in nature … However, <strong>Dr Sampaio's question of whether this could be POLG or mitochondrial</strong> cannot be completely excluded at this time</p>
 
         <p>Sitting ~9months but unsteady, sitting unsupported and well by 12 months</p>
 
         <p>Mum also noted was delayed in her motor milestones compared to other children in the mother's group</p>
 
         <p>
-        Croup/stridor aged 17m and ongoing cough for most of the last year (now resolved)<br />
+        <strong>Croup/stridor aged 17m and ongoing cough for most of the last year</strong> (now resolved)<br />
         Development:<br />
         Rolling: 9m<br />
         Sitting independantly 10m<br />
@@ -334,21 +413,20 @@
 
         <p>(the milestones were misquoted, neglecting the fact Alina was born a month behind the mothers group. Alina otherwise reached her milestones exactly the same age as the mothers group, sitting independently by Christmas (7 months), crawling by 10 months. All except walking, which was consistent with both parents - dad at 18 months, mum at 22 months. However there are frequent misreporting of the symptoms the parents discussed with the medical staff. (E.g. the cough was not resolved, it was progressing)</p>
 
-        <h4>29/11</h4>
-        <p>
+        <p>29/11
+          <br />
         Neuro believe meds will not affect her current fitting and she would continue to fit regardless of antiepileptics.<br />
         MRI : Normal<br />
         MRI normal<br />
         MRS normal<br />
         CSF lactate normal</p>
+        </div>
 
-
-        <p>29/11/2018 - Metabolic screen showed non-specific abnormalities, not suggestive of an inborn error
-          <br />
-        i.e. this was not indicative of a Genetic related illness</p>
-
-
-
+        <figure class="figure">
+        <img src="img/metabolic-notes-1.png" alt="etabolic screen showed non-specific abnormalities, not suggestive of an inborn error">
+        <figcaption>29/11/2018 - Metabolic screen showed non-specific abnormalities, not suggestive of an inborn error</figcaption>
+        </figure>
+        <p>i.e. this was not indicative of a Genetic related illness</p>
 
       </div>
     </div>
